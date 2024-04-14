@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome To My Travel Journal</h1>
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWkwY3VyenVra2NpYTZuYXk1M3FwY2s2bDkycTU2aHo3NHJvaTlxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2Sq87bt4GOdAnlGo/giphy.gif" alt="Travel Journal GIF">
+    </header>
+
+    <section id="main-content">
+        <article class="journal-entry">
+            <p>This is my travel journal! its contains things about my recent travel experiences.</p>
+            <p>This journal is made to help me look back on my travel memories while also allowing you to share the experience with me. via photos and journal entries</p>
+                <div class="gallery">
+                    <div class="gallery-item">
+                    <img src="images/famontrain.jpg" alt="train img">
+                    <div class="overlay" >my sister on the train</div>
+                </div>
+            <p>The photo above is my sister on the train to versaille. However, Here are some more photos from my various trip.</p>
+        </article>
+        <article>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/london.jpg" alt="london img 1">
+                    <div class="overlay" >This is the pics i took when we went to london in 2014</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/paris.jpg" alt="paris img 2">
+                    <div class="overlay">This is the pics i took when we went to paris in 2022</div>
+                </div>
+                <button id="myButton">Add  journal-entry</button>
+
+            </div>
+        </article>
+    
+        <article class="cheap-flights">
+            <h2>Cheap Flights</h2>
+            <p>Check out these websites for finding cheap flights. These sites have helped me find fights to all the places i've been  </p>
+            <ul>
+                <li><a href="https://www.skyscanner.com/">Link to the Skyscanner.It can scan all the top airlines and travel providers across the net</a></li>
+                <li><a href="https://www.google.com/flights">Link to Google Flights> typically better deals with more options </a></li>
+                <li><a href="https://www.kayak.com/">Kayak. It isnt my favorite but has good booking and loding options </a></li>
+            </ul>
+            <div id="weather">Check out the weather in these places before booking</div>
+
+        </article>
+    
+        <article class="decide-next-destination">
+            <h2>Decide Where to Go Next</h2>
+            <p>Can't decide where to go next? Here are some ideas:</p>
+            <ul>
+                <li>Explore historic cities in Europe</li>
+                <li>Relax on a tropical beach in Southeast Asia</li>
+                <li>Embark on an adventurous safari in Africa</li>
+            </ul>
+            <button id="mapButton">Show Map: to help pick next destination</button>
+            <div id="map" style="height: 400px;"></div>
+
+
+        </article>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2> My Contact Information</h2>
+            <p>Email: Alissa@example.com</p>
+            <p>Phone: +1234567890</p>
+        </div>
+    </footer>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</script>
+</body>
+</html>
+

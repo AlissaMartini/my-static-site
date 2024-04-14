@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+header {
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.journal-entry {
+    background-color: beige;
+    background-image: "images/images/notebookpaper.jpg";
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+}
+
+.journal-entry p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.cheap-flights,
+.decide-next-destination {
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    padding: 20px;
+}
+
+.cheap-flights h2,
+.decide-next-destination h2 {
+    margin-top: 0;
+}
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    width: calc(100%); 
+    border-radius: 10px; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); 
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
